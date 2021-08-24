@@ -13,9 +13,9 @@ It allowed me to practice on:
 
 ## Stack
 
-Javascript
-HTML
-CSS made mobile first
+- Javascript
+- HTML
+- CSS made mobile first
 
 ## Install
 
@@ -26,3 +26,4 @@ $ cd ../path/to/the/file
 ## Putting the project online
 
 the project has been uploaded to: [https://copy-starbucks.surge.sh/]
+Here is the link to the original page: [https://www.starbucks.ca/]
