@@ -31,7 +31,7 @@ let mobile = {
             document.querySelector('.menu__burger').classList.remove('open');
             document.querySelector('.burger__sub-menu').classList.remove('open');
             document.querySelector('.sub-menu__menu').classList.remove('open');
-            document.querySelector('div.opacity').classList.remote('open');
+            document.querySelector('div.opacity').classList.remove('open');
         }
     },
 
