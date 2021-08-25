@@ -1,7 +1,7 @@
 let mobile = {
     menu:()=> {
        document.querySelector('.menu__burger').addEventListener('click', mobile.handleMenu);
-
+       window.addEventListener('scroll', mobile.handleMenuClose);
     },
 
     submenuOpen:()=>{
@@ -26,14 +26,21 @@ let mobile = {
         document.querySelector('div.opacity').classList.toggle('open');
     },
 
+    handleMenuClose: ()=> {
+        if(document.querySelector('.menu__burger').classList.contains('open')){
+            document.querySelector('.menu__burger').classList.remove('open');
+            document.querySelector('.burger__sub-menu').classList.remove('open');
+            document.querySelector('.sub-menu__menu').classList.remove('open');
+            document.querySelector('div.opacity').classList.remote('open');
+        }
+    },
+
     handleSubMenuOpen:()=> {
         document.querySelector('.sub-menu__menu').classList.add('open');
-       /* document.querySelector('.burger__sub-menu').setAttribute('style','display:none;');*/
     },
 
     handleSubMenuClose:()=> {
         document.querySelector('.sub-menu__menu').classList.remove('open');
-      /*  document.querySelector('.burger__sub-menu').setAttribute('style','display:flex; flex-direction:column;');*/
     },
 
     handleMenuFooter:()=> {
