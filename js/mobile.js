@@ -28,12 +28,12 @@ let mobile = {
 
     handleSubMenuOpen:()=> {
         document.querySelector('.sub-menu__menu').classList.add('open');
-        document.querySelector('.burger__sub-menu').setAttribute('style','display:none;');
+       /* document.querySelector('.burger__sub-menu').setAttribute('style','display:none;');*/
     },
 
     handleSubMenuClose:()=> {
         document.querySelector('.sub-menu__menu').classList.remove('open');
-        document.querySelector('.burger__sub-menu').setAttribute('style','display:flex; flex-direction:column;');
+      /*  document.querySelector('.burger__sub-menu').setAttribute('style','display:flex; flex-direction:column;');*/
     },
 
     handleMenuFooter:()=> {
