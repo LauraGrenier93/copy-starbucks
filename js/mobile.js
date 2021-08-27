@@ -43,7 +43,7 @@ let mobile = {
         document.querySelector('.sub-menu__menu').classList.remove('open');
     },
 
-    handleMenuFooter:()=> {
+    handleMenuFooter:(event)=> {
         if(event.target.classList.contains('menu-title__text')){
             event.target.nextElementSibling.classList.toggle('open');
         } else {

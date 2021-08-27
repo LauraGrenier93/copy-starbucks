@@ -1,0 +1,105 @@
+@media screen and (min-width: 768px) {
+    /*
+    * HEADER
+    */
+
+    .menu__home {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .menu__tablet {
+        padding: 0 1rem;
+        display: flex;
+        width: 100%;
+        justify-content: inherit;
+        align-items: center;
+    }
+
+    .benefit__link {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right:1.5rem;
+    }
+    .benefit__link:last-child {
+        margin-right:0;
+    }
+
+    .client__link:first-child {
+        margin-right:0.8rem;
+    }
+
+
+
+    /*
+    * MAIN
+    */
+
+    main {
+        margin-top: 5rem;
+    }
+    .articles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        height: 31rem;
+        display: flex;
+    }
+
+    .article:nth-child(2n+1) {
+        flex-direction: row-reverse;
+    }
+    .article:nth-child(2n+0) {
+        flex-direction: row;
+    }
+    
+    .article__picture, .article__section {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+    .article:first-child {
+        order:5;
+        height: 18rem;
+    }
+    .picture__second {
+        height: 18.5rem;
+    }
+
+    .article__title {
+        line-height: 2rem;
+    }
+    .article__text {
+        line-height: 2.5rem;
+    }
+    .article__picture:not(.article__picture--picture2, .article__picture--picture3, .article__picture--picture4)  {
+        background-image: url("../images/star-starbucks-tablet.png");
+        background-color: gray;
+        background-position: -83px 0rem;
+    }
+    .rating {
+        display: flex;
+        justify-content: center;
+    }
+    .rating__text {
+        width: 50%;
+        margin: 2rem;
+    }
+/*
+* FOOTER
+*/
+    .footer {
+        padding: 0 2rem 1rem;
+    }
+    .menu__link {
+        padding: 0 0 1.9rem 0;
+    }
+
+
+}

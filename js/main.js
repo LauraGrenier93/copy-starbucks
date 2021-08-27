@@ -4,6 +4,7 @@ let main = {
         mobile.submenuOpen();
         mobile.submenuClose();
         mobile.menufooter();
+        tablet.menu();
     }
 }
 

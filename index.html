@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="This is a copy of the Starbucks site. This is the rewards page where you can get free drinks if you are registered. You accumulate stars and can drink free tea, coffee, chocolates or the latest specialities.">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
+    <link media="(max-width: 768px)" as="image" href="./images/star-starbucks.png" />
+    <link media="(min-width: 768px)"  as="image" href="./images/star-starbucks-tablet.png" />
     <link rel="stylesheet" href="./css/mobile.css">
+    <link media="(min-width: 768px)" rel="stylesheet" href="./css/tablet.css">
 
     <link samesite="None" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/brands.css" integrity="sha384-S5yUroXKhsCryF2hYGm7i8RQ/ThL96qmmWD+lF5AZTdOdsxChQktVW+cKP/s4eav" crossorigin="anonymous">
     <link samesite="None" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
@@ -19,21 +24,32 @@
     <header>
             <ul class="menu">
                 <li class="menu__home"></li>
+                <div class="menu__tablet">
+                    <li class="menu__home"></li>
+                    <li> <a href="/" class="benefit__link">Menu</a>
+                     <a  href="/" class="benefit__link">Rewards</a>
+                     <a  href="/" class="benefit__link">Gift cards</a></li>
+                    <li class="sub-menu__location"><a href="/"><i class="fas fa-map-marker-alt"></i> Find a store</a></li>
+                    <li> <a  href="/" class="client__link connexion">Sign in</a>
+                         <a  href="/" class="client__link new-client">Join now</a></li>
+                    <li></li>
+                    </div>
                 <li class="menu__burger">
                         <div class="burger__line"></div>
                 </li>
+      
             </ul>
             <ul class="burger__sub-menu">
                 <li class="sub-menu__benefit">
-                    <a class="benefit__link menu">Menu</a>
-                    <a class="benefit__link">Rewards</a>
-                    <a class="benefit__link">Gift cards</a>
+                    <a  href="/" class="benefit__link menu">Menu</a>
+                    <a  href="/" class="benefit__link">Rewards</a>
+                    <a  href="/" class="benefit__link">Gift cards</a>
                 </li>
                 <li class="sub-menu__client">
-                    <a class="client__link connexion">Sign in</a>
-                    <a class="client__link new-client">Join now</a>
+                    <a  href="/" class="client__link connexion">Sign in</a>
+                    <a  href="/" class="client__link new-client">Join now</a>
                 </li>
-                <li class="sub-menu__location"><a><i class="fas fa-map-marker-alt"></i> Find a store</a></li>
+                <li class="sub-menu__location"><a href="/"><i class="fas fa-map-marker-alt"></i> Find a store</a></li>
             </ul>
             <ul class="sub-menu__menu">
                 <li class="menu__title" > Menu</li>
@@ -42,9 +58,11 @@
                 <li class="menu__products">Previous Orders</li>
                 <li class="menu__products">Favorite Products</li>
             </ul>
+
     </header>
     <main>
         <div class="opacity"></div>
+        <div class="articles">
         <article class="article">
             <header class="article__picture"></header>
             <section class="article__section">
@@ -81,11 +99,9 @@
                 <a class="article__link" href="/">Order now</a>
             </section>
         </article>
+    </div>
         <aside class="rating">
             <p class="rating__text">*At participating stores. Some restrictions apply. See <a class="rating__link" href="/">starbucks.ca/rewards.</a></p>
-            <p class="rating__text">**Menu limited.  Restricted delivery area.  Available in participating locations only.
-                Fees subject to change.  Prices for Starbucks® items purchased through Uber Eats may be higher than posted in stores or as marked.
-                See the Uber Eats app for details.</p>
         </aside>
     </main>
     <footer>
@@ -169,5 +185,6 @@
     </footer>
     <script src="./js/main.js"></script>
     <script src="./js/mobile.js"></script>
+    <script src="./js/tablet.js"></script>
 </body>
 </html>

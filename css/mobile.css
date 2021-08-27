@@ -1,6 +1,11 @@
 /*
 * HEADER
 */
+
+* {
+    box-sizing: content-box;
+}
+
 html, body, .burger__sub-menu, header, footer{
     height: 100%;
 }
@@ -11,6 +16,11 @@ body>header {
     left: 0;
     width: 100%;
     z-index:2;
+}
+
+a {
+    text-decoration: none;
+    color:black;
 }
 
 .menu {
@@ -27,6 +37,7 @@ body>header {
     width: 2rem;
     height:2rem;
     background-image: url("/images/logo-starbucks.png");
+    background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -211,6 +222,7 @@ main {
 
 .article__picture {
     background-image: url("/images/star-starbucks.png");
+    background-color: gray;
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
@@ -219,6 +231,7 @@ main {
 
 .article__picture--picture2 {
     background-image: url("/images/watercolor.jpg");
+    background-color: gray;
     height: 20rem;
 }
 
@@ -229,11 +242,12 @@ main {
 
 .article__picture--picture4 {
     background-image: url("/images/summer.jpg");
+    background-color: gray;
     height: 20rem;
 }
 
 .picture__second {
-    z-index: 2;
+    z-index: 1;
     width: 90%;
     padding: 1.4rem 0rem;
     margin: auto;
