@@ -19,14 +19,16 @@ let mobile = {
         }   
     },
 
-    handleMenu:()=> {
+    handleMenu:(event)=> {
+        event.preventDefault();
         document.querySelector('.menu__burger').classList.toggle('open');
         document.querySelector('.burger__sub-menu').classList.toggle('open');
         document.querySelector('.sub-menu__menu').classList.remove('open');
         document.querySelector('div.opacity').classList.toggle('open');
     },
 
-    handleMenuClose: ()=> {
+    handleMenuClose: (event)=> {
+        event.preventDefault();
         if(document.querySelector('.menu__burger').classList.contains('open')){
             document.querySelector('.menu__burger').classList.remove('open');
             document.querySelector('.burger__sub-menu').classList.remove('open');
@@ -35,15 +37,18 @@ let mobile = {
         }
     },
 
-    handleSubMenuOpen:()=> {
+    handleSubMenuOpen:(event)=> {
+        event.preventDefault();
         document.querySelector('.sub-menu__menu').classList.add('open');
     },
 
-    handleSubMenuClose:()=> {
+    handleSubMenuClose:(event)=> {
+        event.preventDefault();
         document.querySelector('.sub-menu__menu').classList.remove('open');
     },
 
     handleMenuFooter:(event)=> {
+        event.preventDefault();
         if(event.target.classList.contains('menu-title__text')){
             event.target.nextElementSibling.classList.toggle('open');
         } else {

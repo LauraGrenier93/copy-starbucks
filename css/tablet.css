@@ -28,6 +28,9 @@
     .client__link:first-child {
         margin-right:0.8rem;
     }
+    .menu__tablet>:nth-of-type(0n+4) {
+        width: 28%
+    }
 
 
 

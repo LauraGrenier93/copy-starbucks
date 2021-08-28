@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     /*
     * HEADER
     */
@@ -6,28 +6,27 @@
         padding: 1.2rem 0 1.4rem 1.8rem;
     }
     .menu__tablet {
-        justify-content: center;
-        display: flex;
+        justify-content: space-evenly;;
     }
 
     .sub-menu__location {
-            margin: 0px 2rem 0 51%;
-
+            margin: 0px 2rem 0 30%;
     }
     .menu__tablet>li:nth-of-type(0n+2) {
         margin: 0 2rem;
+        display: flex;
     }
 
     /*
     * MAIN
     */
     main, footer {
-        display: flex;
-        flex-direction: column;
+        margin-top: 7rem;
         align-items: center;
     }
     .articles {
         width: 78%;
+        margin: auto;
     }
     .rating {
         width: 100%;

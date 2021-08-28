@@ -16,12 +16,6 @@ let computer = {
 
             let allMenuSubtitle = document.querySelectorAll('.menu__subtitle');
                 allMenuSubtitle.forEach(subtitle=>subtitle.classList.remove('hidden'));
-
-            let allFontAsome = document.querySelectorAll('.fa-ms');
-            for (let fontAsome in allFontAsome) {
-                fontAsome.classList.remove('fa-ms');
-                fontAsome.classList.add('fa-lg');
-            }
         }
     }
 
