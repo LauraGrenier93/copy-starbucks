@@ -10,36 +10,38 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
-    <link media="(max-width: 768px)" as="image" href="./images/star-starbucks.png" rel="reload" />
-    <link media="(min-width: 768px)"  as="image" href="./images/star-starbucks-tablet.png" rel="reload"/>
+    <link media="(max-width: 768px)" as="image" href="./images/star-starbucks.png" rel="preload" />
+    <link media="(min-width: 768px)"  as="image" href="./images/star-starbucks-tablet.png" rel="preload"/>
     <link rel="stylesheet" href="./css/mobile.css">
     <link media="(min-width: 768px)" rel="stylesheet" href="./css/tablet.css">
     <link media="(min-width: 1024px)" rel="stylesheet" href="./css/computer.css">
 
-    <link samesite="None" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/brands.css" integrity="sha384-S5yUroXKhsCryF2hYGm7i8RQ/ThL96qmmWD+lF5AZTdOdsxChQktVW+cKP/s4eav" crossorigin="anonymous">
-    <link samesite="None" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/brands.css" integrity="sha384-S5yUroXKhsCryF2hYGm7i8RQ/ThL96qmmWD+lF5AZTdOdsxChQktVW+cKP/s4eav" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
   
     <title>Document</title>
 </head>
 <body>
     <header>
-            <ul class="menu">
-                <li class="menu__home"></li>
-                <div class="menu__tablet">
+            <div class="menu">
+                <div class="menu__home"></div>
+                <ul class="menu__tablet">
                     <li class="menu__home"></li>
-                    <li> <a href="/" class="benefit__link">Menu</a>
+                    <li>
+                     <a href="/" class="benefit__link">Menu</a>
                      <a  href="/" class="benefit__link">Rewards</a>
                      <a  href="/" class="benefit__link">Gift cards</a></li>
                     <li class="sub-menu__location"><a href="/"><i class="fas fa-map-marker-alt"></i> Find a store</a></li>
-                    <li> <a  href="/" class="client__link connexion">Sign in</a>
-                         <a  href="/" class="client__link new-client">Join now</a></li>
-                    <li></li>
-                    </div>
-                <li class="menu__burger">
+                    <li> 
+                        <a  href="/" class="client__link connexion">Sign in</a>
+                        <a  href="/" class="client__link new-client">Join now</a>
+                    </li>
+                </ul>
+                <div class="menu__burger">
                         <div class="burger__line"></div>
-                </li>
+                </div>
       
-            </ul>
+            </div>
             <ul class="burger__sub-menu">
                 <li class="sub-menu__benefit">
                     <a  href="/" class="benefit__link menu">Menu</a>
@@ -110,7 +112,7 @@
             <li class="footer__menu-menu">
                 <div class="footer__menu-title">
                     <p class="menu-title__text">About Starbucks</p>
-                    <span class="menu-title__icone">&gt</span>
+                    <span class="menu-title__icone">&gt;</span>
                 </div>
                 <div class="menu__subtitle hidden">
                     <a class="menu-link hidden" href="/">Our Heritage</a>
@@ -124,7 +126,7 @@
             <li class="footer__menu-menu">
                 <div class="footer__menu-title">
                     <p class="menu-title__text">Careers</p>
-                    <span class="menu-title__icone">&gt</span>
+                    <span class="menu-title__icone">&gt;</span>
                 </div>
                 <div class="menu__subtitle hidden">
                     <a class="menu-link hidden" href="/">Culture and Values</a>
@@ -137,7 +139,7 @@
             <li class="footer__menu-menu">
                 <div class="footer__menu-title">
                     <p class="menu-title__text">Social Impact</p>
-                    <span class="menu-title__icone">&gt</span>
+                    <span class="menu-title__icone">&gt;</span>
                 </div>
                 <div class="menu__subtitle hidden">
                     <a class="menu-link hidden" href="/">Overview</a>
@@ -150,7 +152,7 @@
             <li class="footer__menu-menu">
                 <div class="footer__menu-title">
                     <p class="menu-title__text">For Business Partners</p>
-                    <span class="menu-title__icone">&gt</span>
+                    <span class="menu-title__icone">&gt;</span>
                 </div>
                 <div class="menu__subtitle hidden">
                     <a class="menu-link hidden" href="/">Corporate Gift Card Sales</a>
@@ -160,7 +162,7 @@
             <li class="footer__menu-menu">
                 <div class="footer__menu-title">
                     <p class="menu-title__text">Order and Pickup</p>
-                    <span class="menu-title__icone">&gt</span>
+                    <span class="menu-title__icone">&gt;</span>
                 </div>
                 <div class="menu__subtitle hidden">
                     <a class="menu-link hidden" href="/">Order on the App</a>
