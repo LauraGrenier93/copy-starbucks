@@ -4,7 +4,10 @@ let main = {
         mobile.submenuOpen();
         mobile.submenuClose();
         mobile.menufooter();
+        tablet.windowResize();
         tablet.menu();
+        computer.windowResize();
+        computer.menu();
     }
 }
 
