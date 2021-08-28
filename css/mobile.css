@@ -387,7 +387,7 @@ footer {
 .menu-link {
     text-decoration: none;
     padding:0 0 1.8rem 0;
-    color:gray;
+    color:rgb(105, 105, 105);
     z-index:2;
     height:auto;
     transition: height 0.3s, padding 0.3s;
